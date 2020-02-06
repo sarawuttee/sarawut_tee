@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TicketModel1StoreContainer" CdmEntityContainer="TicketEntities1">
+    <EntitySetMapping Name="books">
+      <EntityTypeMapping TypeName="TicketModel1.book">
+        <MappingFragment StoreEntitySet="book">
+          <ScalarProperty Name="bookid" ColumnName="bookid" />
+          <ScalarProperty Name="start" ColumnName="start" />
+          <ScalarProperty Name="finish" ColumnName="finish" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="members">
+      <EntityTypeMapping TypeName="TicketModel1.member">
+        <MappingFragment StoreEntitySet="member">
+          <ScalarProperty Name="idmember" ColumnName="idmember" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="ncradit" ColumnName="ncradit" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
